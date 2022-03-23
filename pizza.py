@@ -50,10 +50,12 @@ class pizzaOrder():
 
         self.thinButton = tkinter.Radiobutton(self.midframe1,text='Thin Crust: $10',variable=self.radioVar,value=10,font=('Arial',12),bg='orange')
         self.regularButton = tkinter.Radiobutton(self.midframe1,text='Regular: $12',variable=self.radioVar,value=12,font=('Arial',12),bg='orange')
+        self.stuffedButton = tkinter.Radiobutton(self.midframe1,text='Stuffed Crust: $14',variable=self.radioVar,value=14,font=('Arial',12),bg='orange')
         self.deepdishButton = tkinter.Radiobutton(self.midframe1,text='Deep Dish: $15',variable=self.radioVar,value=15,font=('Arial',12),bg='orange')
 
         self.crustLabel.pack()
         self.regularButton.pack(anchor='w')
+        self.stuffedButton.pack(anchor='w')
         self.thinButton.pack(anchor='w')
         self.deepdishButton.pack(anchor='w')
 
